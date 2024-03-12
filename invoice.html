@@ -27,13 +27,15 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="index.html">Contact Form</a>
+                        <a class="nav-link" href="index.html">Contact Form</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="addressBook.html">Address Book</a>
-                    </li><li class="nav-item">
+                        <a class="nav-link" href="addressBook.html">Address Book</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="invoice.html">Invoice</a>
-                    </li><li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link " href="carousel&cards.html">Carousel & Cards</a>
                     </li>
                 </ul>
@@ -45,16 +47,107 @@
         <div class="container mt-5">
             <ul class="nav nav-pills mb-1">
                 <li class="nav-item">
-                    <a href="addressBook.html" aria-current="page" class="nav-link active"> My Try</a>
+                    <a href="invoice.html" aria-current="page" class="nav-link active"> My Try</a>
                 </li>
                 <li class="nav-item">
-                    <a href="addressBook.html" class="nav-link " > Actual</a>
+                    <a href="invoice2.html" class="nav-link "> Actual</a>
                 </li>
             </ul>
 
-           <h1>Invoice</h1>
-               
+            <div class="border border-2 shadow-lg p-3 bg-light mt-3">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="button" value="Print"  class="btn btn-dark btn-sm " onclick="window.print()">Print This Page</button>
+                    </div>
+                    <div class="col-8">
+                        <img src="img/IdeaFoundryLogo.png" alt="Idea Foundry Logo" class="img-fluid">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <h5>Client No: 4908</h5>
+                    </div>
+                    <hr class="mt-3">
+                    <div class="col-6">
+                        <p>
+                            <b>Date: </b>05/12/2019
+                        </p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <p>
+                            <b>Invoice No:</b> 19005
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="col-6">
+                        <p>
+                            <b>Invoice To:</b><br>
+                            Mark Davis <br>
+                            333 AI Davis Way <br>
+                            Las VAgas, NV 89118
+                        </p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <p>
+                            <b>Pay To:</b><br>
+                            Idea Foundry, Irc. <br>
+                            2705 N. Enterprise St <br>
+                            Kernersville, NC 27284
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Service</th>
+                                    <th>Description</th>
+                                    <th>Rate</th>
+                                    <th>QTY</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Design</td>
+                                    <td>Web Design</td>
+                                    <td>$60.00</td>
+                                    <td>10</td>
+                                    <td>$600.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Development</td>
+                                    <td>Website Development</td>
+                                    <td>$150.00</td>
+                                    <td>10</td>
+                                    <td>$1,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Deployment</td>
+                                    <td>Deployment and Hosting</td>
+                                    <td>$450.00</td>
+                                    <td>1</td>
+                                    <td>$450.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Sub Total:</td>
+                                    <td>$2,550.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Tax:</td>
+                                    <td>$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Total</td>
+                                    <td>$2,550.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <p><b>NOTE:</b> This is computer generated receipt and does not require physical signature.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+        </div>
 
         </div>
     </main>
