@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 gb1">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -27,61 +27,76 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Contact Form</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link " href="addressBook.html">Address Book</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link " href="invoice.html">Invoice</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link " href="carousel&cards.html">Carousel & Cards</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container ">
-            <div class="">
-                <div class="row ">
-                    <div class="col text-center mt-5 text-light">
-                        <h2>Contact Me</h2>
+        <div class="container mt-5">
+            <ul class="nav nav-pills mb-1">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" aria-current="page"> My Try</a>
+
+                </li>
+                <li class="nav-item">
+
+                    <a href="cfContact.html" class="nav-link"> Actual</a>
+                </li>
+            </ul>
+            <div class="row ">
+                <div class="col text-center  text-light">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <form action="#" class=" p-2 formz">
+                <div class="row form-group mb-3">
+                    <div class="col ">
+                        <label for="FName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                        <label for="LName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name">
                     </div>
                 </div>
-                <form action="#" class=" p-2">
-                    <div class="row form-group mb-3">
-                        <div class="col ">
-                            <label for="FName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col">
-                            <label for="LName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
+                <div class="row form-group mb-3">
+                    <div class="col">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
                     </div>
-                    <div class="row form-group mb-3">
-                        <div class="col">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col">
-                            <label for="phone" class="form-label">Phone(optional)</label>
-                            <input type="tel" class="form-control" placeholder="Phone">
-                        </div>
+                    <div class="col">
+                        <label for="phone" class="form-label">Phone(optional)</label>
+                        <input type="tel" class="form-control" placeholder="Phone">
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <label for="Subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="col-12">
-                            <label for="Message" class="form-label">Message</label>
-                            <textarea name="Message" class="form-control" cols="30" rows="10"
-                                placeholder="Message"></textarea>
-                        </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="Subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" placeholder="Subject">
                     </div>
-                    <div class="row px-2">
-                        <div class="col-12">
-                            <button type="submit" class="btn  btn-primary">Submit</button>
-                        </div>
+                    <div class="col-12">
+                        <label for="Message" class="form-label">Message</label>
+                        <textarea name="Message" class="form-control" cols="30" rows="10"
+                            placeholder="Message"></textarea>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="row px-2">
+                    <div class="col-12">
+                        <button type="submit" class="btn  btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </main>
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">

@@ -10,7 +10,7 @@ main>.container {
     width: 100%;
 }
 
-body {
+.gb1 {
     background: #bdc3c7;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
@@ -20,7 +20,8 @@ body {
 
 }
 
-form {
+
+.formz {
     background: #2193b0;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
@@ -29,3 +30,4 @@ form {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+ 
