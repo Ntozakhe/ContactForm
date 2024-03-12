@@ -18,8 +18,8 @@
 <body class="d-flex flex-column h-100 gb1">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Contact Form</a>
+        <div class="container-fluid d-print-none">
+            <a class="navbar-brand " href="index.html">Contact Form</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,14 +46,125 @@
     <main class="flex-shrink-0">
         <div class="container mt-5">
             <ul class="nav nav-pills mb-1">
-                <li class="nav-item">
+                <li class="nav-item  d-print-none">
                     <a href="invoice.html"  class="nav-link"> My Try</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  d-print-none">
                     <a href="invoice2.html" class="nav-link active" aria-current="page"> Actual</a>
                 </li>
             </ul>
-
+            <div class="container rounded p-3 border border-1 bg-light">
+                <div class="d-flex justify-content-end d-print-none ">
+                    <!-- d-print-none makes the button below not to show when printing -->
+                    <button type="button" class="btn btn-dark mt-3" onclick="window.print()">Print This Page</button>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-7 ">
+                        <img src="img/IdeaFoundryLogo.png" title="Idea Foundry Logo" alt="Idea Foundry Logo" class="img-fluid">
+                        <!--  title is there for when we hover over an image then the title shows -->
+                    </div>
+                    <div class="col-sm-5 d-flex justify-content-sm-end justify-content-start">
+                        <strong>Customer:</strong> &nbsp; 4908
+                    </div>
+                 </div>
+                 <hr>
+                 <div class="row row-cols-1 row-cols-sm-2">
+                    <div class="col-sm-6">
+                        <strong>Date:</strong>&nbsp;5/12/2019
+                    </div>
+                    <div class="col-sm-6 d-flex justify-content-sm-end justify-content-start">
+                       <strong>Invoice Number:</strong>&nbsp;19005
+                    </div>
+                 </div>
+                 <hr>
+                 <div class="row row-cols-md-2">
+                    <div class="col-6 d-flex justify-content-start">
+                        <div >
+                            <strong>Invoice To:</strong><br>
+                            <address class="address">
+                                Mark Davis <br>
+                                333 Al Davis Way <br>
+                                Las Vegas, NV 89118
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div >
+                            <strong>Pay To:</strong><br>
+                            <address class="address">
+                                Idea Foundry, Inc. <br>
+                                2705 N. Enterprise St<br>
+                                Kernersville, NC 27284
+                            </address>
+                        </div>
+                    </div>
+                    
+                 </div>
+                 <div class="row table-responsive">
+                    <table class="table table-striped bordered"> 
+                        <thead class="thead-dark">
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Rate</th>
+                            <th>QTY</th>
+                            <th class="text-end">Amount</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Design</td>
+                                <td>Website Design</td>
+                                <td>$60.00</td>
+                                <td>10</td>
+                                <td class="text-end">$600.00</td>
+                            </tr>
+                            <tr>
+                                <td>Development</td>
+                                <td>Website Development</td>
+                                <td>$150.00</td>
+                                <td>10</td>
+                                <td class="text-end">$1,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>Deployment</td>
+                                <td>Deploymeny and Hosting</td>
+                                <td>$450.00</td>
+                                <td>1</td>
+                                <td class="text-end">$450.00</td>
+                            </tr>
+                          
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Sub Total</td>
+                                <td class="text-end">$2,550.00</td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="4">Tax:</td>
+                                <td class="text-end">$0.00</td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="4">Total</td>
+                                <td class="text-end">$2,550.00</td>
+                                
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                </div>
+                <footer>
+                    <div class="row">
+                        <div class="col-12"> 
+                            <p>
+                                <strong>Note:</strong>&nbsp;This is a computer generated receipt and does not require a signature.
+                            
+                            </p>
+                            </div>
+                    </div>
+                </footer>
+             </div>
+             
            
 
         </div>
